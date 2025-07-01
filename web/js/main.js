@@ -342,49 +342,6 @@ import { Air } from "./Saqr.js"
         ).ToHorizontal().SetGap(2).SetWidth(100).ToCenter()
       ).SetBackColor(C.THEME.secondaryBgColor).SetRef("hell"),
       Air.New.Layout.Section(
-        Air.New.Text.H3(Air.T("exploreCategs")),
-        Air.New.Text.Paragraph(Air.T("exploreCategsBody")).SetPadding(20, 20),
-        Air.New.Layout.Grid(4,
-          Air.Robolec.CategCard("desktop-code", Air.T("Web Development"), 1, C.COLOR.lightBlue.lightBlue),
-          Air.Robolec.CategCard("brain", Air.T("AI & ML"), 1, C.COLOR.amber.amber),
-          Air.Robolec.CategCard("layer-group", Air.T("Design"), 1, C.COLOR.purple.purple),
-          Air.Robolec.CategCard("shield-keyhole", Air.T("Cybersecurity"), 1, C.COLOR.blue.blue),
-          Air.Robolec.CategCard("file-alt", Air.T("Writing"), 1, C.COLOR.red.red),
-          Air.Robolec.CategCard("chart-mixed-up-circle-dollar", Air.T("Marketing"), 1, C.COLOR.lightGreen.lightGreen),
-          Air.Robolec.CategCard("briefcase", Air.T("Business"), 1, C.COLOR.orange.orange),
-          Air.Robolec.CategCard("arrow-circle-right", Air.T("viewAll"), 1, C.COLOR.gray.grey),
-        )//.ToHorizontal()//.SetGap(2).SetPadding(2, 2,1,1),
-      ).SetWidth(100),
-      Air.New.Layout.Section(
-        Air.New.Text.H3(Air.T("featuredFreelancers")),
-        Air.New.Text.Paragraph(Air.T("discoverTopBody")).SetPadding(20, 20),
-        Air.New.Layout.Grid(3,
-          Air.Robolec.FeaturedFreelancer("Jake Paol", "Reverse Engineer", 4.5, 20, [2, 5, 9, 7], "Blallalal", 15),
-          Air.Robolec.FeaturedFreelancer("Jake Paol", "Reverse Engineer", 4.5, 20, [2, 5, 9, 7], "Blallalal", 15),
-          Air.Robolec.FeaturedFreelancer("Jake Paol", "Reverse Engineer", 4.5, 20, [2, 5, 9, 7], "Blallalal", 15),
-        )
-      ),
-      Air.New.Layout.Section(
-        Air.New.Text.H3(Air.T("trendProjs")),
-        Air.New.Text.Paragraph(Air.T("browseProjs")).SetPadding(20, 20),
-        Air.New.Layout.Grid(2,
-          Air.Robolec.TrendProject("Projects1", "Today", [1, 5, 8], "Hlloeoeoe e", "$633", 50),
-          Air.Robolec.TrendProject("Projects1", "Today", [1, 5, 8], "Hlloeoeoe e", "$633", 50),
-          Air.Robolec.TrendProject("Projects1", "Today", [1, 5, 8], "Hlloeoeoe e", "$633", 50),
-          Air.Robolec.TrendProject("Projects1", "Today", [1, 5, 8], "Hlloeoeoe e", "$633", 50),
-        )
-      ),
-      Air.New.Layout.Section(
-        Air.New.Text.H3(Air.T("howRobolecs")),
-        Air.New.Text.Paragraph(Air.T("howRobolecsWord")).SetPadding(20, 20),
-        Air.New.Layout.Grid(3,
-          Air.Robolec.TextCard("suitcase", Air.T("simplePowerfulOne"), Air.T("simplePowerfulOneBody")),
-          Air.Robolec.TextCard("search-dollar", Air.T("simplePowerfulTwo"), Air.T("simplePowerfulTwoBody")),
-          Air.Robolec.TextCard("star", Air.T("simplePowerfulThree"), Air.T("simplePowerfulThreeBody")),
-        ),
-        Air.New.Button.Invert(Air.T("howRobolecsBtn")).SetBorder(20).SetOnClick(function () { Air.Page.GoTo("howWorks") })
-      ),
-      Air.New.Layout.Section(
         Air.New.Text.H3(Air.T("whatTheySay")),
         Air.New.Text.Paragraph(Air.T("whatTheySayWord")).SetPadding(20, 20),
         Air.New.Layout.Grid(3,
